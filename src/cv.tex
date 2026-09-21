@@ -1,0 +1,246 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Dr. Peter Cudmore}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+{\centering\large\emph{Curriculum Vitae}\\ \hrulefill \vspace{1em}}
+
+% Place name at left
+{ \huge \name}
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+Melbourne, Australia
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  {\small
+  \begin{tabular}{ll}\\
+    Email: & \href{mailto:peter.cudmore@uqconnect.edu.au}{\tt peter.cudmore@uqconnect.edu.au} \\
+    GitHub: & \href{https://github.com/peter-cudmore}{\tt github.com/peter-cudmore} \\
+    LinkedIn: & \href{https://www.linkedin.com/in/peter-cudmore/}{\tt linkedin.com/in/peter-cudmore}
+  \end{tabular}
+  }
+\end{minipage}
+
+\section*{Professional and Academic Experience}
+\subsection*{\emph{Founder \& Chief Technology Officer} at \emph{Pneumatica Bio}, Melbourne, Australia (Aug 2025 - present).}
+\begin{itemize}
+	\item Designed and implemented modelling and simulation software.
+	\item Built prototype liquid-handling robotic systems.
+\end{itemize}
+
+\subsection*{\emph{Founder} at \emph{VRTX Systems}, Melbourne, Australia (Mar 2024 - present).}
+\begin{itemize}
+	\item Embedded software-system design and implementation for autonomous systems.
+	\item Designed and implemented a prototype embedded-radio stack for VRTX RDIO, including LoRa broadcast communication, secure node joining and leaving, AES encryption, and partial network-clock synchronisation.
+\end{itemize}
+
+\subsection*{\emph{Software Architect \& Algorithms Engineer} at \emph{Arkeus}, Melbourne, Australia (Nov 2022 - Mar 2024).}
+\begin{itemize}
+	\item Designed the software architecture and implemented software for the HSOR product.
+\end{itemize}
+
+\subsection*{\emph{Research Fellow} at \emph{The University of Melbourne, Australia} (Nov 2021 - Nov 2022).}
+\begin{itemize}
+	\item \emph{Supervisor:} Prof. Chris Manzie.
+	\item \emph{Group:} Control and Signal Processing Lab, School of Engineering.
+	\item \emph{Project:} Co-design for Hypersonic Systems.
+\end{itemize}
+
+\subsection*{\emph{Mechatronics Engineer} at \emph{UAM TEC}, Melbourne, Australia (Jul 2021 - Nov 2021).}
+\begin{itemize}
+	\item Developed software for the Manitor vertical-shaft inspection platform and the Atlas autonomous underwater vehicle.
+\end{itemize}
+
+\subsection*{\emph{Research Fellow} at \emph{The University of Melbourne, Australia} (Jun 2019 - Nov 2021).}
+\begin{itemize}
+	\item \emph{Supervisors:} Prof. Chris Manzie and Dr. Airlie Chapman.
+	\item \emph{Group:} Control and Signal Processing Lab \& Melbourne AeroMech, School of Engineering.
+	\item \emph{Project:} Defence Cooperative Research Centre in Trusted Autonomous Systems.
+\end{itemize}
+
+\subsection*{\emph{Research Fellow} at \emph{The University of Melbourne, Australia} (Nov 2017 - Jun 2019).}
+\begin{itemize}
+	\item \emph{Supervisor:} Prof. Edmund Crampin.
+	\item \emph{Group:} Systems Biology Laboratory, School of Chemical and Biomedical Engineering.
+	\item \emph{Project:} Energetic Systems Modelling in Synthetic Biology.
+\end{itemize}
+
+
+\section*{Publications}
+\begin{itemize}
+	\item \href{https://doi.org/10.1109/CDC49753.2023.10384006}{C. van der Heide, P. Cudmore, I. Jahn, V. Bone, P. M. Dower and C. Manzie} {\em Feasibility Detection for Nested Codesign of Hypersonic Vehicles}, 62nd IEEE Conference on Decision and Control (CDC), 2023.
+	\item \href{https://doi.org/10.1140/epje/s10189-021-00152-4}{P. Cudmore, M. Pan, P. J. Gawthrop and E. J. Crampin} {\em Analysing and simulating energy-based models in biology using BondGraphTools}, European Physical Journal E \textbf{44} (2021), 148.
+	\item \href{https://doi.org/10.1016/j.jtbi.2020.110223}{P. Gawthrop, P. Cudmore and E. Crampin} {\em Physically-Plausible Modelling of Biomolecular Systems: A Simplified, Energy-Based Model of the Mitochondrial Electron Transport Chain}, Journal of Theoretical Biology \textbf{493} (2020), 110223.
+	\item \href{http://dx.doi.org/10.14264/uql.2017.462}{P. Cudmore {\em Synchronisation of nanomechanical oscillators}, PhD Thesis, School of Mathematics and Physics, The University of Queensland (2017).}
+	\item \href{https://doi.org/10.1063/1.4908604}{P. Cudmore and C. A. Holmes} {\em Phase and amplitude dynamics of nonlinearly coupled oscillators}, Chaos \textbf{25} (2015), 023110.
+\end{itemize}
+
+\section*{Education}
+\begin{itemize}
+	\item Ph.D. Mathematics, The University of Queensland (March 2017).
+	\begin{itemize}
+		\item \emph{Thesis Advisors:} Dr. Cecilia Gonz\'alez-Tokman, Dr. Catherine A. Holmes and Prof. Joseph Grotowski.
+		\item \emph{Thesis Title:} Synchronisation of nanomechanical oscillators.
+	\end{itemize}
+	\item B.Sci. Mathematics (First Class Honours), The University of Queensland (2012).
+\end{itemize}
+
+\section*{Talks}
+\begin{itemize}
+	\item {\em On Emergence in Complex Physical Systems}, Applied Mathematics Seminars, The University of Sydney and The University of New South Wales (March 2019).
+	\item {\em BondGraphTools: Modelling Network Bioenergetics}, Australian and New Zealand Industrial and Applied Mathematics Annual Conference, Nelson, New Zealand (February 2019).
+	\item {\em `Systems all the way down'---Managing Complexity with BondGraphTools}, 62nd Annual Meeting of the Australian Mathematical Society, University of Adelaide, Adelaide (December 2018).
+	\item {\em Introduction to Recurrent Neural Networks}, Machine Learning Group at the Manton Lab, The University of Melbourne (November 2018).
+	\item {\em Synchronisation}, Mathematical and Computational Biology Seminar Series, The University of Melbourne (May 2018).
+	\item {\em An Introduction to Bond Graph Modelling}, 12th International CellML Workshop, Waiheke Island, Auckland, New Zealand (March 2018).
+	\item {\em Nonlinearly Coupled Oscillators}, Dynamical Systems Seminar, The University of Queensland (April 2016).
+	\item {\em Rock and Roll and Quantum Optics}, Special Session on Dynamical Systems, 59th Annual Meeting of the Australian Mathematical Society, Flinders University, South Australia (September 2015).
+	\item {\em Synchronisation of Nonlinearly Coupled Oscillators}, 8th Australia--New Zealand Mathematics Convention, The University of Melbourne (December 2014).
+	\item {\em Collective Motion in Nonlinearly Coupled Damped Harmonic Oscillators}, Australian and New Zealand Industrial and Applied Mathematics Annual Conference, Rotorua, New Zealand (February 2014).
+	\item {\em Synchronisation and Amplitude Death in Nanomechanical Oscillators}, Australian and New Zealand Industrial and Applied Mathematics Annual Conference, Newcastle, Australia (February 2013).
+\end{itemize}
+
+\section*{Teaching, Funding and Awards}
+\begin{itemize}
+	\item \emph{Teaching:} Co-ordinator and Presenter, {\em Bond Graph Clinics: Introduction to energetic modelling with bond graphs}, The University of Melbourne (2018).
+	\item \emph{Teaching:} Tutor Coordinator, Tutor (Calculus, Complex Analysis, Applied Mathematics, Classical Mechanics, Nonlinear Dynamics), and Computer Lab Assistant, The University of Queensland (2011 - 2016).
+	\item \emph{Funding:} Australian Postgraduate Award (October 2012 - March 2016).
+	\item \emph{Award:} School of Mathematics and Physics Award for Excellence in Tutoring, The University of Queensland (Semester 1, 2013).
+\end{itemize}
+
+\section*{Academic Development}
+\begin{itemize}
+	\item \emph{Systems and Synthetic Biology Summer School}, Certosa di Pontignano, Siena, Italy (July 2018).
+	\item \emph{Australian Mathematical Sciences Institute Workshop on Advances in Ergodic Theory, Hyperbolic Dynamics and Statistical Laws}, Australian National University, Canberra, Australia (November 2016).
+	\item \emph{Australian Mathematical Sciences Institute Winter School on Biological and Environmental Modelling}, The University of Queensland, Brisbane, Australia (July 2016).
+	\item \emph{EQuS Engineered Quantum Systems Winter School}, The University of Queensland (July 2014, 2015).
+	\item \emph{Australian and New Zealand Industrial and Applied Mathematics Satellite Workshop on Collective and Emergent Behaviour}, The University of Newcastle, Newcastle, Australia (February 2013).
+\end{itemize}
+
+%\begin{itemize}
+%	\item 
+%	\begin{minipage}{0.45\linewidth}
+%		Dr. Cathy Holmes\\
+%	\end{minipage}
+%	\begin{minipage}{0.45\linewidth}
+%		\begin{tabular}{ll}
+%			Email: & \href{mailto:cathyauholmes@gmail.com}{\tt cathyauholmes@gmail.com} \\
+%		\end{tabular}
+%	\end{minipage}
+%\end{itemize}
+%\begin{itemize}
+%	\item Dr. Cecilia Gonz\'alez Tokman\\
+%	\begin{minipage}{0.45\linewidth}
+%		University of Queensland\\
+%		School of Mathematics \\
+%		Brisbane, St Lucia, QLD 4072
+%	\end{minipage}
+%	\begin{minipage}{0.45\linewidth}
+%		\begin{tabular}{ll}
+%			Room: &67 - 545\\
+%			Phone:& (+61) 7 3365-3271\\
+%			Email: & \href{mailto:cecilia.gt@uq.edu.au}{\tt  cecilia.gt@uq.edu.au} \\
+%		\end{tabular}
+%	\end{minipage}
+%\end{itemize}
+%\section*{Teaching References}
+%\begin{itemize}
+%	\item Prof. Joseph Grotowski\\
+%	\begin{minipage}{0.45\linewidth}
+%University of Queensland\\
+%School of Mathematics \\
+%Brisbane, St Lucia, QLD 4072
+%	\end{minipage}
+%	\begin{minipage}{0.45\linewidth}
+%		\begin{tabular}{ll}
+%			Room: &06 - 206\\
+%			Phone:& (+61) 7 3365 3260\\
+%			Email: & \href{mailto:j.grotowski@uq.edu.au}{\tt  j.grotowski@uq.edu.au} \\
+%		\end{tabular}
+%	\end{minipage}
+%\end{itemize}
+%\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
